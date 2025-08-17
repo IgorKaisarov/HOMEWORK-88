@@ -20,18 +20,31 @@ public class Main {
 
         int[] first = new int[]{1, 2, 3};
         for (int h = 0; h < first.length; h++) {
-            System.out.print(first[h] + ", ");
+            if (h == first.length - 1) {
+                System.out.print(first[h]);
+            } else {
+                System.out.print(first[h] + ", ");
+            }
         }
 
         float[] secondNew = new float[]{1.57f, 7.654f, 9.986f};
         for (int i = 0; i < secondNew.length; i++) {
-            System.out.print(secondNew[i] + ", ");
+            if (i == secondNew.length - 1) {
+                System.out.println(secondNew[i]);
+            } else {
+                System.out.print(secondNew[i] + ", ");
+            }
         }
 
         int[] thirdNew = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
         for (int g = 0; g < thirdNew.length; g++) {
-            System.out.print(thirdNew[g] + ", ");
+            if (g == thirdNew.length - 1) {
+                System.out.println(thirdNew[g]);
+            } else {
+                System.out.print(thirdNew[g] + ", ");
+            }
         }
+
 
         // Task 3
         System.out.println(" Task 3 ");
@@ -39,18 +52,26 @@ public class Main {
         int[] firstOne = new int[]{1, 2, 3};
         for (int j = firstOne.length - 1; j >= 0; j--) {
             System.out.print(firstOne[j]);
-            if (j > 0) ;
-            System.out.print(", ");
+            if (j > 0) {
+                System.out.print(", ");
+            }
         }
+
 
         float[] secondNewT = new float[]{1.57f, 7.654f, 9.986f};
         for (int b = secondNewT.length - 1; b >= 0; b--) {
-            System.out.print(secondNewT[b] + ", ");
+            System.out.print(secondNewT[b]);
+            if (b > 0) {
+                System.out.print(", ");
+            }
         }
 
         int[] thirdNewT = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
         for (int p = thirdNewT.length - 1; p >= 0; p--) {
-            System.out.print(thirdNewT[p] + ", ");
+            System.out.print(thirdNewT[p]);
+            if (p > 0) {
+                System.out.print(", ");
+            }
         }
 
         // Task 4
